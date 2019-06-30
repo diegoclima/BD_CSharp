@@ -53,6 +53,7 @@
       <DependentUpon>MENU.cs</DependentUpon>
     </Compile>
     <Compile Include="MODEL\Aluno.cs" />
+    <Compile Include="MODEL\Professor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MENU.resx">
