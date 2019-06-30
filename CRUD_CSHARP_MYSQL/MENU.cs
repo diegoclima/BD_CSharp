@@ -9,9 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CRUD_CSHARP_MYSQL {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class MENU : Form {
+        public MENU() {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+
         }
     }
 }
