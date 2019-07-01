@@ -9,7 +9,7 @@ using CRUD_CSHARP_MYSQL.MODEL.System;
 namespace CRUD_CSHARP_MYSQL.MODEL.System {
     public class Professor {
         private int _matricula;
-        private int _idcurso;
+        private Curso cursos = new Curso();
         private string _nome;
 
         public int Matricula {
@@ -29,16 +29,16 @@ namespace CRUD_CSHARP_MYSQL.MODEL.System {
             set { _nome = value; }
         }
 
-        public int IdCurso {
-            get { return _idcurso; }
-            set {
-                if (value<0) {
-                    MessageBox.Show("Valor inválido!", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+        //public int IdCurso {
+        //    get { return _idcurso; }
+        //    set {
+        //        if (value<0) {
+        //            MessageBox.Show("Valor inválido!", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        }
 
-            }
-        }
+        //    }
+        //}
 
-        
+        public Curso Cursos { get => cursos; set => cursos = value; }
     }
 }

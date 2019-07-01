@@ -10,14 +10,15 @@ namespace CRUD_CSHARP_MYSQL.MODEL.System {
     public class Aluno {
         private string _nome;
         private int _matricula;
-        private int _idCurso;
+        private Curso cursos = new Curso();
+        private List<Aluno> listaAluno = new List<Aluno>();
 
         public Aluno() { }
 
-        public Aluno(string n, int mat, int idcurso) {
+        public Aluno(string n, int mat, Curso c) {
             Nome = n;
             Matricula = mat;
-            IdCurso = idcurso;
+            Cursos = c;
         }
 
         public string Nome {
@@ -38,14 +39,14 @@ namespace CRUD_CSHARP_MYSQL.MODEL.System {
             }
         }
 
-        public int IdCurso {
-            get { return _idCurso; }
-            set { if (value < 0) { MessageBox.Show("Valor inválido!", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Error); } else {
-                    _idCurso = value;
-                } }
-        }
+        //public int IdCurso {
+        //    get { return _idCurso; }
+        //    set { if (value < 0) { MessageBox.Show("Valor inválido!", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Error); } else {
+        //            _idCurso = value;
+        //        } }
+        //}
 
-        
-
+        public Curso Cursos { get => cursos; set => cursos = value; }
+        public List<Aluno> ListaAluno { get => listaAluno; set => listaAluno = value; }
     }
 }
