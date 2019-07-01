@@ -1,5 +1,5 @@
 ﻿namespace CRUD_CSHARP_MYSQL {
-    partial class Cadastro {
+    partial class CadastroAluno {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -176,7 +176,7 @@
             this.label1.TabIndex = 42;
             this.label1.Text = "Matricula: ";
             // 
-            // Cadastro
+            // CadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -195,8 +195,8 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dg_dados);
-            this.Name = "Cadastro";
-            this.Text = "Cadastro";
+            this.Name = "CadastroAluno";
+            this.Text = "Cadastro Aluno";
             ((System.ComponentModel.ISupportInitialize)(this.dg_dados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

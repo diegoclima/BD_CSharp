@@ -49,6 +49,7 @@
             this.buttCurso.TabIndex = 6;
             this.buttCurso.Text = "CURSO";
             this.buttCurso.UseVisualStyleBackColor = true;
+            this.buttCurso.Click += new System.EventHandler(this.buttCurso_Click);
             // 
             // buttProf
             // 

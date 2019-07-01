@@ -14,8 +14,8 @@ using MySql.Data.MySqlClient;
 
 
 namespace CRUD_CSHARP_MYSQL {
-    public partial class Cadastro : Form {
-        public Cadastro() {
+    public partial class CadastroAluno : Form {
+        public CadastroAluno() {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.FixedDialog;
         }

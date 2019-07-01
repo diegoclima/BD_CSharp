@@ -52,11 +52,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\AlunoBLL.cs" />
-    <Compile Include="Cadastro.cs">
+    <Compile Include="BLL\CursoBLL.cs" />
+    <Compile Include="BLL\ProfessorBLL.cs" />
+    <Compile Include="CadastroAluno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastro.Designer.cs">
-      <DependentUpon>Cadastro.cs</DependentUpon>
+    <Compile Include="CadastroAluno.Designer.cs">
+      <DependentUpon>CadastroAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroCurso.Designer.cs">
+      <DependentUpon>CadastroCurso.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\BancoDeDados.cs" />
     <Compile Include="DAO\CrudAluno.cs" />
@@ -73,8 +81,11 @@
     <Compile Include="MODEL\Professor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cadastro.resx">
-      <DependentUpon>Cadastro.cs</DependentUpon>
+    <EmbeddedResource Include="CadastroAluno.resx">
+      <DependentUpon>CadastroAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroCurso.resx">
+      <DependentUpon>CadastroCurso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MENU.resx">
       <DependentUpon>MENU.cs</DependentUpon>

@@ -17,8 +17,13 @@ namespace CRUD_CSHARP_MYSQL {
         }
 
         private void buttAluno_Click(object sender, EventArgs e) {
-            Cadastro cadastroAluno = new Cadastro();
+            CadastroAluno cadastroAluno = new CadastroAluno();
             cadastroAluno.Show();
+        }
+
+        private void buttCurso_Click(object sender, EventArgs e) {
+            CadastroCurso curso = new CadastroCurso();
+            curso.Show();
         }
     }
 }
