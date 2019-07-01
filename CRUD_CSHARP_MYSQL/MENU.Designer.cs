@@ -69,6 +69,7 @@
             this.buttAluno.TabIndex = 7;
             this.buttAluno.Text = "ALUNO";
             this.buttAluno.UseVisualStyleBackColor = true;
+            this.buttAluno.Click += new System.EventHandler(this.buttAluno_Click);
             // 
             // label1
             // 

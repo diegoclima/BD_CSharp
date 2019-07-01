@@ -15,5 +15,10 @@ namespace CRUD_CSHARP_MYSQL {
             FormBorderStyle = FormBorderStyle.FixedDialog;
 
         }
+
+        private void buttAluno_Click(object sender, EventArgs e) {
+            Cadastro cadastroAluno = new Cadastro();
+            cadastroAluno.Show();
+        }
     }
 }
