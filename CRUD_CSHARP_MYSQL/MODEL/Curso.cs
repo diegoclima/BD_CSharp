@@ -12,11 +12,11 @@ using System.Windows.Forms;
 namespace CRUD_CSHARP_MYSQL.MODEL.System {
     public class Curso {
         private string descricao;
-        private string idcurso;
+        private int idcurso;
 
         public Curso() { }
 
-        public Curso(string descricao, string idcurso) {
+        public Curso(string descricao, int idcurso) {
             this.descricao = descricao;
             this.idcurso = idcurso;
         }
@@ -26,6 +26,6 @@ namespace CRUD_CSHARP_MYSQL.MODEL.System {
         }
 
         public string Descricao { get => descricao; set => descricao = value; }
-        public string Idcurso { get => idcurso; set => idcurso = value; }
+        public int Idcurso { get => idcurso; set => idcurso = value; }
     }
 }

@@ -12,6 +12,13 @@ namespace CRUD_CSHARP_MYSQL.MODEL.System {
         private Curso cursos = new Curso();
         private string _nome;
 
+        public Professor() { }
+
+        public Professor(string nome, int matricula, Curso c) {
+            Nome = nome;
+            Matricula = matricula;
+            Cursos = c;
+        }
         public int Matricula {
             get { return _matricula; }
             set {

@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="DAO\BancoDeDados.cs" />
     <Compile Include="DAO\CrudAluno.cs" />
+    <Compile Include="DAO\CRUDCurso.cs" />
     <Compile Include="DAO\CrudProfessor.cs" />
     <Compile Include="MENU.cs">
       <SubType>Form</SubType>
